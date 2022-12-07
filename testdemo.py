@@ -1,10 +1,13 @@
 import pytest
+import math
 
-def test(a, b):
-    return a+b
+def test_sqrt():
+   num = 25
+   assert math.sqrt(num) == 5
 
+def testsquare():
+   num = 7
+   assert 7*7 == 49
 
-@pytest.mark.parametrize('a,b,expected_output', [(1,2,3), (2,3,5)])
-def test_demo(a,b,expected_output):
-    result = test(a,b)
-    assert result == expected_output
+def tesequality():
+   assert 10 == 11
